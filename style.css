@@ -690,6 +690,24 @@ footer {
   color: var(--dominant-gold);
 }
 
+/* Social Media Icons */
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: var(--bg-white);
+  font-size: 1.8rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--dominant-gold);
+  transform: translateY(-3px);
+}
+
 .copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1rem;
@@ -768,5 +786,14 @@ footer {
   .contact-form {
     flex: 2;
     margin-bottom: 0;
+  }
+
+  /* Footer for larger screens */
+  .footer-section.social {
+    text-align: right; /* Align social links to the right on desktop */
+  }
+
+  .social-links {
+    justify-content: flex-end; /* Align the icons to the right */
   }
 }
